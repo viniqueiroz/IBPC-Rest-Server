@@ -1,91 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="" ng-app> <!--<![endif]-->
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/sb-admin.css" rel="stylesheet">
-
-  </head>
-
-  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 
 
-  <% include ./partials/nav %>
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
 
-    <div class="content-wrapper">
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-      <div class="container-fluid">
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
 
-        <!-- Breadcrumbs -->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
-          </li>
-          <li class="breadcrumb-item active">My Dashboard</li>
-        </ol>
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#main-navbar">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-      <% include ./partials/head %>
+        <div id="menubar" class="main-menu">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
 
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" /></a>
+                    </div>
 
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
 
-
-
-
-
-
-
-
-          </div>
-          <!-- /.container-fluid -->
-
+                            <div class="form-group">
+                              <form class="navbar-form navbar-left">
+                              <div class="form-group">
+                             <input type="text" class="form-control" placeholder="Cliente"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                              </div>
+                              <div class="form-group">
+                             <input type="text" class="form-control" placeholder="Obra">
+                              </div>
+                               </form>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
         </div>
-        <!-- /.content-wrapper -->
+      </div>
+        <!--Home page style-->
+        <header id="home" class="sections">
+            <div class="container">
+
+                <div class="row">
+                    <div class="homepage-style">
+                          <div class="col-md-2 col-sm-10 col-xs-12">
+                             <div class="unique-apps">
+                                 <div class="btn-group-vertical" role="group" aria-label="...">
+                                   <button type="button" class="btn btn-warning">Funcionalidade 1</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 2</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 3</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 4</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 5</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 6</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 7</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 8</button>
+                                   <button type="button" class="btn btn-warning">Funcionalidade 9</button>
+
+                                       <div class="btn-group" role="group">
+                                          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             Funcionalidade 10
+                                               <span class="caret"></span>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Sub-Funcionalidade 1</a></li>
+                                            <li><a href="#">Sub-Funcionalidade 2</a></li>
+                                          </ul>
+                                      </div>
+                                  <button type="button" class="btn btn-default">Sair</button>
+                                </div>
+
+                            </div>
+                        </div>
+      <div id="contents">
+                           <h1> TELA INICIAL </h1>
+                           <p>Essa será a tela inicial do sistema, aqui provavelmente ficará uma imagem ou algo do tipo.</p>
+                           <p>A cada seleção de funcionalidade esse coutainer abrirá uma nova pagina html.</p>
+                           <p>Todo o resto da página, exceto esse countainer, permanecerá estático.</p>
+                           <p>As outras paginas serão redimensionadas para se adequar a este countainer.</p>
+                           <p>&nbsp;</p>
+                           <p>&nbsp;</p>
+                           <p>&nbsp;</p>
+                           <p>&nbsp;</p>
+                           <p>&nbsp;</p>
+                           <p>&nbsp;</p>
+                           <p>&nbsp;</p>
+
+</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container">
+
+                <div class="row">
 
 
+                    <div class="socio-copyright">
+
+                        <p><a target="_blank" href="http://www.ibpc.com.br/"> IBPC Pré-Moldados </a>2017. All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
 
 
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-
-<% include ./partials/footer %>
-
-
-  <% include ./partials/logout %>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/sb-admin.min.js">
-
-
-</script>
-
-  </body>
-
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
